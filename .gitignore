@@ -1,0 +1,16 @@
+# Terraform
+.terraform/
+*.tfstate
+*.tfstate.backup
+*.tfvars
+.terraform.tfstate.lock.info
+
+# Application / Backend
+node_modules/
+__pycache__/
+*.env
+.env
+
+# OS Files
+.DS_Store
+Thumbs.db
