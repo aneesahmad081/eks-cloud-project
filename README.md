@@ -33,5 +33,36 @@ To run this project, you need the following tools installed and configured:
 Navigate to the `infra` directory:
 ```bash
 cd infra
-Author: Anees Ahmad
-AWS Certified Solutions Architect – Associate
+```
+
+1. **Initialize Terraform:**
+```bash
+terraform init
+```
+
+2. **Review the Deployment Plan:**
+```bash
+terraform plan
+```
+
+3. **Provision the Infrastructure:**
+```bash
+terraform apply
+```
+*(Note: The EKS Control Plane and Node Group may take 15-20 minutes to provision).*
+
+4. **Connect to the Cluster:**
+Configure `kubectl` to interact with the new cluster:
+```bash
+aws eks update-kubeconfig --region us-east-1 --name eks-main-cluster
+```
+
+## 🧹 Cleanup (The Golden Rule)
+To avoid incurring AWS charges, always tear down the infrastructure after practice:
+```bash
+terraform destroy
+```
+
+---
+**Author:** Anees Ahmad  
+*AWS Certified Solutions Architect – Associate*
