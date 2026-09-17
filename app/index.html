@@ -1,22 +1,77 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>AWS EKS Portfolio - Anees Ahmad</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AWS EKS Portfolio</title>
     <style>
-        body { font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; text-align: center; margin-top: 80px; background-color: #f4f4f9; }
-        h1 { color: #232F3E; } /* AWS Corporate Dark Blue */
-        p { font-size: 18px; color: #333; line-height: 1.6; }
-        .container { background: white; padding: 40px; border-radius: 10px; box-shadow: 0px 4px 15px rgba(0,0,0,0.05); display: inline-block; max-width: 600px; border-top: 4px solid #ff9900; }
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: #f4f7f6;
+            color: #333333;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+        }
+        .container {
+            background-color: #ffffff;
+            padding: 40px 50px;
+            border-radius: 12px;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
+            text-align: center;
+            max-width: 600px;
+            border-top: 5px solid #232f3e;
+        }
+        h1 {
+            color: #ff9900;
+            margin-bottom: 20px;
+            font-size: 28px;
+        }
+        p {
+            font-size: 16px;
+            line-height: 1.6;
+            color: #555555;
+            margin-bottom: 15px;
+        }
+        .certification {
+            font-weight: bold;
+            color: #232f3e;
+            font-size: 18px;
+            margin-bottom: 25px;
+        }
+        .version-tag {
+            display: inline-block;
+            margin-top: 10px;
+            padding: 10px 20px;
+            background-color: #e9ecef;
+            color: #198754;
+            border-radius: 25px;
+            font-weight: bold;
+            font-size: 14px;
+            border: 1px solid #dee2e6;
+        }
+        .footer {
+            margin-top: 30px;
+            font-size: 13px;
+            color: #888888;
+        }
     </style>
 </head>
 <body>
     <div class="container">
         <h1>AWS EKS Cluster is Live</h1>
-        <p>Welcome to the production-grade cloud infrastructure seamlessly provisioned and managed by <strong>Anees Ahmad</strong>.</p>
-        <p><strong>AWS Certified Solutions Architect - Associate</strong></p>
-        <hr style="border: 0; border-top: 1px solid #eee; margin: 20px 0;">
-        <p style="font-size: 14px; color: #777;">Version 1.0.1 | Running on Nginx & Docker</p>
+        <p>Welcome to the production-grade cloud infrastructure seamlessly provisioned and managed by Anees Ahmad.</p>
+        <div class="certification">
+            AWS Certified Solutions Architect - Associate
+        </div>
+        <div class="version-tag">
+            Version 2.0.0 | CI/CD Pipeline is 100% Working!
+        </div>
+        <div class="footer">
+            Automated Deployment via GitHub Actions
+        </div>
     </div>
 </body>
 </html>
