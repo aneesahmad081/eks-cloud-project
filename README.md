@@ -85,77 +85,46 @@ The project provisions a custom AWS environment across two Availability Zones.
 The following screenshots demonstrate the infrastructure, deployment, CI/CD pipeline, and running application.
 
 ### 1. 🏗️ Architecture Diagram
-
-![Terraform Apply](screenshots/terraform-apply.png)
-
-**Shows:**
-The overall AWS architecture, including VPC, Availability Zones, public/private subnets, NAT Gateway, EKS, worker nodes, and Load Balancer.
+![Architecture Diagram](screenshots/terraform-apply.png)
+**Shows:** The overall AWS architecture, including VPC, Availability Zones, public/private subnets, NAT Gateway, EKS, worker nodes, and Load Balancer.
 
 ---
 
 ### 2. ☸️ EKS Cluster
-
 ![Amazon EKS Cluster](screenshots/eks-cluster.png)
-
-**Shows:**
-The Amazon EKS cluster successfully created and running in AWS.
+**Shows:** The Amazon EKS cluster successfully created and running in AWS.
 
 ---
 
 ### 3. 🖥️ EKS Worker Nodes
-
 ![EKS Worker Nodes](screenshots/eks-nodes.png)
-
-**Shows:**
-The EKS managed node group and worker nodes running on `t3.small` EC2 instances.
+**Shows:** The EKS managed node group and worker nodes running on `t3.small` EC2 instances.
 
 ---
 
 ### 4. 📦 Amazon ECR Repository
-
-![EKS Portfolio Application](screenshots/eks-portfolio-app.png)
-
-**Shows:**
-The Docker image successfully pushed to the Amazon Elastic Container Registry (ECR).
+![Amazon ECR Repository](screenshots/eks-portfolio-app.png)
+**Shows:** The Docker image successfully pushed to the Amazon Elastic Container Registry (ECR).
 
 ---
 
 ### 5. ☸️ Kubernetes Pods
-
 ![Kubernetes Pods](screenshots/k8s-pods.png)
-
-**Shows:**
-
-```bash
-kubectl get pods
-```
-
+**Shows:** 
+`kubectl get pods`
 The screenshot demonstrates that the application pods are successfully running inside the EKS cluster.
 
 ---
 
 ### 6. ⚙️ GitHub Actions CI/CD
-
 ![GitHub Actions CI/CD](screenshots/pipeline.png)
-
-**Shows:**
-A successful GitHub Actions workflow that:
-
-1. Checks out the source code.
-2. Authenticates with AWS.
-3. Builds the Docker image.
-4. Pushes the image to Amazon ECR.
-5. Connects to Amazon EKS.
-6. Deploys the application to Kubernetes.
+**Shows:** A successful GitHub Actions workflow that checks out code, authenticates with AWS, builds the Docker image, pushes to ECR, and deploys to EKS.
 
 ---
 
 ### 7. 🌐 Live Application
-
 ![Live Application](screenshots/live-application.png)
-
-**Shows:**
-The web application successfully running through the AWS Load Balancer endpoint.
+**Shows:** The web application successfully running through the AWS Load Balancer endpoint. 
 
 ---
 
